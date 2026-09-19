@@ -1,11 +1,6 @@
 /*!
-<<<<<<< HEAD
  * Bootstrap Utilities v5.3.8 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
-=======
- * Bootstrap Utilities v5.3.3 (https://getbootstrap.com/)
- * Copyright 2011-2024 The Bootstrap Authors
->>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root,
@@ -524,13 +519,10 @@
 .visually-hidden-focusable:not(:focus):not(:focus-within):not(caption) {
   position: absolute !important;
 }
-<<<<<<< HEAD
 .visually-hidden *,
 .visually-hidden-focusable:not(:focus):not(:focus-within) * {
   overflow: hidden !important;
 }
-=======
->>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
 
 .stretched-link::after {
   position: absolute;

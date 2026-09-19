@@ -1,11 +1,6 @@
 /*!
-<<<<<<< HEAD
   * Bootstrap v5.3.8 (https://getbootstrap.com/)
   * Copyright 2011-2025 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
-=======
-  * Bootstrap v5.3.3 (https://getbootstrap.com/)
-  * Copyright 2011-2024 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
->>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
 (function (global, factory) {
@@ -210,11 +205,7 @@
    * @param {HTMLElement} element
    * @return void
    *
-<<<<<<< HEAD
    * @see https://www.harrytheo.com/blog/2021/02/restart-a-css-animation-with-javascript/#restarting-a-css-animation
-=======
-   * @see https://www.charistheo.io/blog/2021/02/restart-a-css-animation-with-javascript/#restarting-a-css-animation
->>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
    */
   const reflow = element => {
     element.offsetHeight; // eslint-disable-line no-unused-expressions
@@ -259,11 +250,7 @@
     });
   };
   const execute = (possibleCallback, args = [], defaultValue = possibleCallback) => {
-<<<<<<< HEAD
     return typeof possibleCallback === 'function' ? possibleCallback.call(...args) : defaultValue;
-=======
-    return typeof possibleCallback === 'function' ? possibleCallback(...args) : defaultValue;
->>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
   };
   const executeAfterTransition = (callback, transitionElement, waitForTransition = true) => {
     if (!waitForTransition) {
@@ -585,11 +572,7 @@
       const bsKeys = Object.keys(element.dataset).filter(key => key.startsWith('bs') && !key.startsWith('bsConfig'));
       for (const key of bsKeys) {
         let pureKey = key.replace(/^bs/, '');
-<<<<<<< HEAD
         pureKey = pureKey.charAt(0).toLowerCase() + pureKey.slice(1);
-=======
-        pureKey = pureKey.charAt(0).toLowerCase() + pureKey.slice(1, pureKey.length);
->>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
         attributes[pureKey] = normalizeData(element.dataset[key]);
       }
       return attributes;
@@ -664,11 +647,7 @@
    * Constants
    */
 
-<<<<<<< HEAD
   const VERSION = '5.3.8';
-=======
-  const VERSION = '5.3.3';
->>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
 
   /**
    * Class definition
@@ -694,11 +673,8 @@
         this[propertyName] = null;
       }
     }
-<<<<<<< HEAD
 
     // Private
-=======
->>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
     _queueCallback(callback, element, isAnimated = true) {
       executeAfterTransition(callback, element, isAnimated);
     }
@@ -1630,19 +1606,11 @@
       this._element.style[dimension] = '';
       this._queueCallback(complete, this._element, true);
     }
-<<<<<<< HEAD
 
     // Private
     _isShown(element = this._element) {
       return element.classList.contains(CLASS_NAME_SHOW$7);
     }
-=======
-    _isShown(element = this._element) {
-      return element.classList.contains(CLASS_NAME_SHOW$7);
-    }
-
-    // Private
->>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
     _configAfterMerge(config) {
       config.toggle = Boolean(config.toggle); // Coerce string values
       config.parent = getElement(config.parent);
@@ -2700,10 +2668,6 @@
     var popperOffsets = computeOffsets({
       reference: referenceClientRect,
       element: popperRect,
-<<<<<<< HEAD
-=======
-      strategy: 'absolute',
->>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
       placement: placement
     });
     var popperClientRect = rectToClientRect(Object.assign({}, popperRect, popperOffsets));
@@ -3031,10 +2995,6 @@
     state.modifiersData[name] = computeOffsets({
       reference: state.rects.reference,
       element: state.rects.popper,
-<<<<<<< HEAD
-=======
-      strategy: 'absolute',
->>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
       placement: state.placement
     });
   } // eslint-disable-next-line import/no-unused-modules
@@ -3741,11 +3701,7 @@
     }
     _createPopper() {
       if (typeof Popper === 'undefined') {
-<<<<<<< HEAD
         throw new TypeError('Bootstrap\'s dropdowns require Popper (https://popper.js.org/docs/v2/)');
-=======
-        throw new TypeError('Bootstrap\'s dropdowns require Popper (https://popper.js.org)');
->>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
       }
       let referenceElement = this._element;
       if (this._config.reference === 'parent') {
@@ -3824,11 +3780,7 @@
       }
       return {
         ...defaultBsPopperConfig,
-<<<<<<< HEAD
         ...execute(this._config.popperConfig, [undefined, defaultBsPopperConfig])
-=======
-        ...execute(this._config.popperConfig, [defaultBsPopperConfig])
->>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
       };
     }
     _selectMenuItem({
@@ -4850,10 +4802,6 @@
    *
    * Shout-out to Angular https://github.com/angular/angular/blob/15.2.8/packages/core/src/sanitization/url_sanitizer.ts#L38
    */
-<<<<<<< HEAD
-=======
-  // eslint-disable-next-line unicorn/better-regex
->>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
   const SAFE_URL_PATTERN = /^(?!javascript:)(?:[a-z0-9+.-]+:|[^&:/?#]*(?:[/?#]|$))/i;
   const allowedAttribute = (attribute, allowedAttributeList) => {
     const attributeName = attribute.nodeName.toLowerCase();
@@ -5018,11 +4966,7 @@
       return this._config.sanitize ? sanitizeHtml(arg, this._config.allowList, this._config.sanitizeFn) : arg;
     }
     _resolvePossibleFunction(arg) {
-<<<<<<< HEAD
       return execute(arg, [undefined, this]);
-=======
-      return execute(arg, [this]);
->>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
     }
     _putElementInTemplate(element, templateElement) {
       if (this._config.html) {
@@ -5121,11 +5065,7 @@
   class Tooltip extends BaseComponent {
     constructor(element, config) {
       if (typeof Popper === 'undefined') {
-<<<<<<< HEAD
         throw new TypeError('Bootstrap\'s tooltips require Popper (https://popper.js.org/docs/v2/)');
-=======
-        throw new TypeError('Bootstrap\'s tooltips require Popper (https://popper.js.org)');
->>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
       }
       super(element, config);
 
@@ -5171,10 +5111,6 @@
       if (!this._isEnabled) {
         return;
       }
-<<<<<<< HEAD
-=======
-      this._activeTrigger.click = !this._activeTrigger.click;
->>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
       if (this._isShown()) {
         this._leave();
         return;
@@ -5362,11 +5298,7 @@
       return offset;
     }
     _resolvePossibleFunction(arg) {
-<<<<<<< HEAD
       return execute(arg, [this._element, this._element]);
-=======
-      return execute(arg, [this._element]);
->>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
     }
     _getPopperConfig(attachment) {
       const defaultBsPopperConfig = {
@@ -5404,11 +5336,7 @@
       };
       return {
         ...defaultBsPopperConfig,
-<<<<<<< HEAD
         ...execute(this._config.popperConfig, [undefined, defaultBsPopperConfig])
-=======
-        ...execute(this._config.popperConfig, [defaultBsPopperConfig])
->>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
       };
     }
     _setListeners() {
@@ -5417,10 +5345,7 @@
         if (trigger === 'click') {
           EventHandler.on(this._element, this.constructor.eventName(EVENT_CLICK$1), this._config.selector, event => {
             const context = this._initializeOnDelegatedTarget(event);
-<<<<<<< HEAD
             context._activeTrigger[TRIGGER_CLICK] = !(context._isShown() && context._activeTrigger[TRIGGER_CLICK]);
-=======
->>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
             context.toggle();
           });
         } else if (trigger !== TRIGGER_MANUAL) {
@@ -6286,10 +6211,6 @@
     }
 
     // Private
-<<<<<<< HEAD
-=======
-
->>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
     _maybeScheduleHide() {
       if (!this._config.autohide) {
         return;
