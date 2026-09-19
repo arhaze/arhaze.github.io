@@ -1,6 +1,11 @@
 /*!
+<<<<<<< HEAD
  * Bootstrap Grid v5.3.8 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
+=======
+ * Bootstrap Grid v5.3.3 (https://getbootstrap.com/)
+ * Copyright 2011-2024 The Bootstrap Authors
+>>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 .container,
@@ -73,7 +78,11 @@
 }
 
 .col {
+<<<<<<< HEAD
   flex: 1 0 0;
+=======
+  flex: 1 0 0%;
+>>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
 }
 
 .row-cols-auto > * {
@@ -282,7 +291,11 @@
 
 @media (min-width: 576px) {
   .col-sm {
+<<<<<<< HEAD
     flex: 1 0 0;
+=======
+    flex: 1 0 0%;
+>>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
   }
   .row-cols-sm-auto > * {
     flex: 0 0 auto;
@@ -451,7 +464,11 @@
 }
 @media (min-width: 768px) {
   .col-md {
+<<<<<<< HEAD
     flex: 1 0 0;
+=======
+    flex: 1 0 0%;
+>>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
   }
   .row-cols-md-auto > * {
     flex: 0 0 auto;
@@ -620,7 +637,11 @@
 }
 @media (min-width: 992px) {
   .col-lg {
+<<<<<<< HEAD
     flex: 1 0 0;
+=======
+    flex: 1 0 0%;
+>>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
   }
   .row-cols-lg-auto > * {
     flex: 0 0 auto;
@@ -789,7 +810,11 @@
 }
 @media (min-width: 1200px) {
   .col-xl {
+<<<<<<< HEAD
     flex: 1 0 0;
+=======
+    flex: 1 0 0%;
+>>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
   }
   .row-cols-xl-auto > * {
     flex: 0 0 auto;
@@ -958,7 +983,11 @@
 }
 @media (min-width: 1400px) {
   .col-xxl {
+<<<<<<< HEAD
     flex: 1 0 0;
+=======
+    flex: 1 0 0%;
+>>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
   }
   .row-cols-xxl-auto > * {
     flex: 0 0 auto;

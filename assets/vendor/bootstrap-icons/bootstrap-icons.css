@@ -1,5 +1,9 @@
 /*!
+<<<<<<< HEAD
  * Bootstrap Icons v1.13.1 (https://icons.getbootstrap.com/)
+=======
+ * Bootstrap Icons v1.11.3 (https://icons.getbootstrap.com/)
+>>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
  * Copyright 2019-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/icons/blob/main/LICENSE)
  */
@@ -7,8 +11,13 @@
 @font-face {
   font-display: block;
   font-family: "bootstrap-icons";
+<<<<<<< HEAD
   src: url("./fonts/bootstrap-icons.woff2?e34853135f9e39acf64315236852cd5a") format("woff2"),
 url("./fonts/bootstrap-icons.woff?e34853135f9e39acf64315236852cd5a") format("woff");
+=======
+  src: url("./fonts/bootstrap-icons.woff2?dd67030699838ea613ee6dbda90effa6") format("woff2"),
+url("./fonts/bootstrap-icons.woff?dd67030699838ea613ee6dbda90effa6") format("woff");
+>>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
 }
 
 .bi::before,
@@ -2076,6 +2085,7 @@ url("./fonts/bootstrap-icons.woff?e34853135f9e39acf64315236852cd5a") format("wof
 .bi-suitcase2-fill::before { content: "\f901"; }
 .bi-suitcase2::before { content: "\f902"; }
 .bi-vignette::before { content: "\f903"; }
+<<<<<<< HEAD
 .bi-bluesky::before { content: "\f7f9"; }
 .bi-tux::before { content: "\f904"; }
 .bi-beaker-fill::before { content: "\f905"; }
@@ -2104,3 +2114,5 @@ url("./fonts/bootstrap-icons.woff?e34853135f9e39acf64315236852cd5a") format("wof
 .bi-globe-asia-australia-fill::before { content: "\f91c"; }
 .bi-globe-central-south-asia-fill::before { content: "\f91d"; }
 .bi-globe-europe-africa-fill::before { content: "\f91e"; }
+=======
+>>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9

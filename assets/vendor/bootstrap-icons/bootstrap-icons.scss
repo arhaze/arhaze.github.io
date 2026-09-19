@@ -1,5 +1,9 @@
 /*!
+<<<<<<< HEAD
  * Bootstrap Icons v1.13.1 (https://icons.getbootstrap.com/)
+=======
+ * Bootstrap Icons v1.11.3 (https://icons.getbootstrap.com/)
+>>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
  * Copyright 2019-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/icons/blob/main/LICENSE)
  */
@@ -2083,6 +2087,7 @@ $bootstrap-icons-map: (
   "suitcase2-fill": "\f901",
   "suitcase2": "\f902",
   "vignette": "\f903",
+<<<<<<< HEAD
   "bluesky": "\f7f9",
   "tux": "\f904",
   "beaker-fill": "\f905",
@@ -2111,6 +2116,8 @@ $bootstrap-icons-map: (
   "globe-asia-australia-fill": "\f91c",
   "globe-central-south-asia-fill": "\f91d",
   "globe-europe-africa-fill": "\f91e",
+=======
+>>>>>>> eedf48717e6c3a720b66aaae0603726c12c7e5c9
 );
 
 @each $icon, $codepoint in $bootstrap-icons-map {
