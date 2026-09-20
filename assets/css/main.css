@@ -2852,4 +2852,29 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+  
+}
+
+/* Custom service dropdown */
+#need.service-select {
+    background-color: #131e24 !important;
+    color: #f4f1eb !important;
+    border: 1px solid #2a3942 !important;
+    border-radius: 8px;
+    padding: 12px 18px;
+    height: 52px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#need.service-select:focus {
+    background-color: #131e24 !important;
+    color: #ffffff !important;
+    border-color: #1596d1 !important;
+    box-shadow: 0 0 0 2px rgba(21, 150, 209, 0.12) !important;
+}
+
+#need.service-select option {
+    background-color: #131e24;
+    color: #ffffff;
 }
